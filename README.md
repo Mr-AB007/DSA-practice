@@ -4,6 +4,16 @@ This repository contains various Data Structures and Algorithms (DSA) implementa
 
 ## Contents
 
+### Searching Algorithms
+1. **Linear Search**
+   - Searches for an element by iterating through the entire array.
+   - Time Complexity: O(n)
+   - Space Complexity: O(1)
+2. **Binary Search**
+   - Searches an element in a sorted array using divide and conquer.
+   - Time Complexity: O(log n)
+   - Space Complexity: O(1)
+
 ### Sorting Algorithms
 1. **Bubble Sort**
    - Simple comparison-based sorting algorithm.
@@ -18,13 +28,6 @@ This repository contains various Data Structures and Algorithms (DSA) implementa
    - Time Complexity: O(n^2)
    - Space Complexity: O(1)
 
-### Searching Algorithms
-1. **Linear Search**
-   - Searches for an element by iterating through the entire array.
-   - Time Complexity: O(n)
-2. **Binary Search**
-   - Searches an element in a sorted array using divide and conquer.
-   - Time Complexity: O(log n)
 
 ### Data Structures
 1. **Arrays**
