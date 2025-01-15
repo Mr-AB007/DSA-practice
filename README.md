@@ -62,10 +62,10 @@ Contributions are welcome! If you have a new algorithm or a solution to add, fee
 - The algorithm or problem is not already covered.
 
 ## License
-This repository is licensed under the MIT License. Feel free to use the code for educational purposes.
+This repository is licensed under the Anubhav educational License. Feel free to use the code for educational purposes.
 
 ## Contact
-If you have any questions or suggestions, please feel free to reach out via [email](mailto:your-email@example.com).
+If you have any questions or suggestions, please feel free to reach out via [email](anubhav7.ranjan@gmail.com).
 
 Happy coding!
 
