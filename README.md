@@ -65,7 +65,7 @@ Contributions are welcome! If you have a new algorithm or a solution to add, fee
 This repository is licensed under the Anubhav educational License. Feel free to use the code for educational purposes.
 
 ## Contact
-If you have any questions or suggestions, please feel free to reach out via [email](anubhav7.ranjan@gmail.com).
+If you have any questions or suggestions, please feel free to reach out via [email](mailto:anubhav7.ranjan@gmail.com).
 
 Happy coding!
 
