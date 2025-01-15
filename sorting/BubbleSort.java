@@ -4,8 +4,10 @@ class Main {
     public static void main(String[] args) {
         int[] a = {2, 3,17, 15, 9};
         int n = a.length;
+
         for (int i = 0; i < n - 1; i++) {
             boolean swapped = false; // Initialize swapped to false for each pass
+            
             for (int j = 0; j < n - i - 1; j++) {
                 if (a[j] > a[j + 1]) {
                     // Swap adjacent elements if they are in the wrong order
