@@ -1,5 +1,6 @@
 import java.util.Arrays;
-class Main {
+
+class BubbleSort {
     public static void main(String[] args) {
         int[] a = {2, 3,17, 15, 9};
         int n = a.length;
