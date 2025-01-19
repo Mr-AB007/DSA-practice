@@ -27,7 +27,12 @@ This repository contains various Data Structures and Algorithms (DSA) implementa
    - Builds the sorted array one element at a time.
    - Time Complexity: O(n^2)
    - Space Complexity: O(1)
-
+4. **Merge Sort**
+   - Merge Sort is a **divide-and-conquer** sorting algorithm that recursively splits an array into two halves, sorts them, and 
+     merges the sorted halves.
+   - It **stable** and **efficient for large datasets**
+   - Time Complexity: O(n log n)
+   - Space Complexity: O(N) , due to temporary arrays.
 
 ### Data Structures
 1. **Arrays**
