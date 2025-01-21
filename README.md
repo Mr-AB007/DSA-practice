@@ -31,10 +31,12 @@ This repository contains various Data Structures and Algorithms (DSA) implementa
    - Merge Sort is a **divide-and-conquer** sorting algorithm that recursively splits an array into two halves, sorts them, and 
      merges the sorted halves.
    - It **stable** and **efficient for large datasets**
+   - Merge sort is fast in the case of a **linked list**.
    - Time Complexity: O(n log n)
    - Space Complexity: O(N) , due to temporary arrays.
 5. QuickSort Algorithm 
-   - QuickSort is an efficient, divide-and-conquer sorting algorithm
+   - QuickSort is an efficient, divide-and-conquer sorting algorithm.
+   - it is appropriate to use it for **arrays**.
    - It works by selecting a pivot, partitioning the array around it, and recursively sorting the subarrays
    - We can get optimized performance using **Hoare’s partitioning, median-of-three pivot selection, tail recursion optimization, and insertion sort for small arrays**
    - Time Complexity:  **O(n log n)** , Worst Case:  **O(n²)**
