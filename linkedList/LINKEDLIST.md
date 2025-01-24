@@ -23,11 +23,74 @@ A **linked list** is a linear data structure where elements are stored in nodes,
 - Allows traversal only in one direction.
 - Efficient insertions and deletions compared to arrays.
 
+### Example Code (Singly Linked List)
+
+```java
+class SinglyLinkedList {
+    class Node {
+        int data;
+        Node next;
+        Node(int data) { this.data = data; this.next = null; }
+    }
+    private Node head;
+    
+    public void insert(int data) {
+        Node newNode = new Node(data);
+        if (head == null) head = newNode;
+        else {
+            Node temp = head;
+            while (temp.next != null) temp = temp.next;
+            temp.next = newNode;
+        }
+    }
+    public void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("NULL");
+    }
+}
+```
+
 ## Doubly Linked List
 
 - Each node contains data, a pointer to the next node, and a pointer to the previous node.
 - Allows traversal in both directions (forward and backward).
 - More memory usage due to additional pointers but more efficient deletions and insertions in the middle.
+
+### Example Code (Doubly Linked List)
+
+```java
+class DoublyLinkedList {
+    class Node {
+        int data;
+        Node prev, next;
+        Node(int data) { this.data = data; this.prev = this.next = null; }
+    }
+    private Node head;
+    
+    public void insert(int data) {
+        Node newNode = new Node(data);
+        if (head == null) head = newNode;
+        else {
+            Node temp = head;
+            while (temp.next != null) temp = temp.next;
+            temp.next = newNode;
+            newNode.prev = temp;
+        }
+    }
+    public void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " <-> ");
+            temp = temp.next;
+        }
+        System.out.println("NULL");
+    }
+}
+```
 
 ## Circular Linked List
 
@@ -73,17 +136,6 @@ System.out.println("Search 20: " + list.search(20)); // Output: true
 System.out.println("Size: " + list.getSize()); // Output: 4
 ```
 
-## How to Run
-
-1. Compile the `LinkedList.java` file:
-   ```sh
-   javac LinkedList.java
-   ```
-2. Run the compiled class:
-   ```sh
-   java LinkedList
-   ```
-
 ## Advantages of Linked Lists
 
 - Dynamic memory allocation
@@ -98,3 +150,4 @@ System.out.println("Size: " + list.getSize()); // Output: 4
 ## Conclusion
 
 Linked lists are a fundamental data structure, essential for understanding dynamic memory management, efficient insertions/deletions, and sequential data handling. They are widely used in stacks, queues, and graph implementations.
+
