@@ -1,6 +1,6 @@
 # DSA Practice Repository
 
-This repository contains various Data Structures and Algorithms (DSA) implementations in Java. It is intended for learning, practicing, and improving problem-solving skills by working on common DSA problems.
+This repository contains various Data Structures and Algorithms (DSA) implementations in **Java**. It is intended for learning, practicing, and improving problem-solving skills by working on common DSA problems.
 
 ## Contents
 
