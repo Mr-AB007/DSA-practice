@@ -147,6 +147,27 @@ System.out.println("Size: " + list.getSize()); // Output: 4
 - Extra memory for pointers
 - Sequential access only (no direct index access)
 
+## Common Problems on Doubly Linked List
+1. Reverse a Doubly Linked List
+2. Find the Middle of a Doubly Linked List
+3. Detect and Remove a Loop (If Formed)
+4. Merge Two Sorted Doubly Linked Lists
+5. Convert a Binary Tree to a Doubly Linked List
+6. Find Pairs in a Doubly Linked List with a Given Sum
+7. Delete a Node at a Given Position
+
+## Common Problems on Linked List (Singly & Doubly)
+1. Reverse a Linked List
+2. Detect a Loop in a Linked List
+3. Remove Duplicates from a Sorted Linked List
+4. Find the Intersection of Two Linked Lists
+5. Find the Nth Node from the End
+6. Check if a Linked List is Palindrome
+7. Flatten a Multilevel Doubly Linked List
+8. Rotate a Linked List
+9. Add Two Numbers Represented by Linked Lists
+10. Clone a Linked List with Random Pointers
+
 ## Conclusion
 
 Linked lists are a fundamental data structure, essential for understanding dynamic memory management, efficient insertions/deletions, and sequential data handling. They are widely used in stacks, queues, and graph implementations.
