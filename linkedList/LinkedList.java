@@ -60,6 +60,17 @@ public class LinkedList {
         size++;
     }
 
+    // Delete from End
+    public void deleteFromEnd() {
+
+        Node temp = head;
+        while(temp.next.next != null)
+        {
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
+
     // Delete by value (O(n) time complexity)
     public void deleteByValue(int data) {
         if (head == null) return;
@@ -112,9 +123,12 @@ public class LinkedList {
         list.insertAtBeginning(5);
         list.insertAtPosition(15, 2);
         list.display(); // Expected: 5 -> 10 -> 15 -> 20 -> 30 -> NULL
-
+        
         list.deleteByValue(15);
+
         list.display(); // Expected: 5 -> 10 -> 20 -> 30 -> NULL
+        list.deleteFromEnd();
+        list.display(); // Expected: 5 -> 10 -> 20 -> NULL
 
         System.out.println("Search 20: " + list.search(20)); // Expected: true
         System.out.println("Size: " + list.getSize()); // Expected: 4
