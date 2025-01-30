@@ -157,7 +157,7 @@ System.out.println("Size: " + list.getSize()); // Output: 4
 7. Delete a Node at a Given Position
 
 ## Common Problems on Linked List (Singly & Doubly)
-1. Reverse a Linked List  [Solution](https://github.com/Mr-AB007/DSA-practice/blob/main/linkedList/ReverseLinkedList.java)
+1. Reverse a Linked List  [(Solution)](https://github.com/Mr-AB007/DSA-practice/blob/main/linkedList/ReverseLinkedList.java)
 2. Detect a Loop in a Linked List
 3. Remove Duplicates from a Sorted Linked List
 4. Find the Intersection of Two Linked Lists
