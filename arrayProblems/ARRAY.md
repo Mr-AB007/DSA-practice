@@ -32,7 +32,7 @@
 Input: [1, 2, 3, 4]
 Output: [1, 3, 6, 10]
 ```
-[Solution](#)
+[Solution](https://github.com/Mr-AB007/DSA-practice/blob/main/arrayProblems/RunningSumof1dArray.java)
 
 ### **2️⃣ Maximum Subarray (Kadane’s Algorithm)**
 **Problem:** Find the contiguous subarray with the maximum sum.
