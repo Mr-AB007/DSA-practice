@@ -160,7 +160,7 @@ System.out.println("Size: " + list.getSize()); // Output: 4
 1. Reverse a Linked List:-   [(Solution)](https://github.com/Mr-AB007/DSA-practice/blob/main/linkedList/ReverseLinkedList.java)
 2. Detect a Loop in a Linked List:- [(Solution)](https://github.com/Mr-AB007/DSA-practice/blob/main/linkedList/DetectLoopInLinkedList.java)
 3. Remove Duplicates from a Sorted Linked List:- [(Solution)](https://github.com/Mr-AB007/DSA-practice/blob/main/linkedList/RemoveDuplicatesSortedLinkedList.java)
-4. Find the Intersection of Two Linked Lists
+4. Find the Intersection of Two Linked Lists:- [(solution)](/workspaces/DSA-practice/linkedList/FindIntersectionInLinkedList.java)
 5. Find the Nth Node from the End
 6. Check if a Linked List is Palindrome
 7. Flatten a Multilevel Doubly Linked List
