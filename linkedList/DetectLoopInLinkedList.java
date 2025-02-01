@@ -36,7 +36,7 @@ public class DetectLoopInLinkedList {
         head.next.next.next.next = new ListNode(5);
 
         // Uncomment to create a loop: 5 → 3
-         head.next.next.next.next.next = head.next.next;
+         //head.next.next.next.next.next = head.next.next;
 
         if (hasLoop(head)) {
             System.out.println("Loop detected in the linked list!");
