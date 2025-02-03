@@ -16,10 +16,10 @@ class ListNode {
 
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        // Dummy node to simplify the result list creation
+   
         ListNode dummy = new ListNode(0);
-        ListNode current = dummy;  // Pointer to build the result linked list
-        int carry = 0;  // Stores the carry from previous sum
+        ListNode current = dummy;  
+        int carry = 0;  
 
         // Process both linked lists until both are fully traversed
         while (l1 != null || l2 != null || carry != 0) {
@@ -27,31 +27,31 @@ class Solution {
             
             if (l1 != null) {
                 sum += l1.val;  // Add digit from first list
-                l1 = l1.next;  // Move to the next node
+                l1 = l1.next; 
             }
             
             if (l2 != null) {
                 sum += l2.val;  // Add digit from second list
-                l2 = l2.next;  // Move to the next node
+                l2 = l2.next; 
             }
 
             carry = sum / 10;  // Compute the new carry
             current.next = new ListNode(sum % 10);  // Create new node with the sum digit
-            current = current.next;  // Move pointer forward
+            current = current.next;  
         }
 
-        return dummy.next;  // Return the resulting linked list (excluding the dummy node)
+        return dummy.next;  //  (excluding the dummy node)
     }
 
     // Helper function to create a linked list from an array of integers
     public static ListNode createLinkedList(int[] arr) {
-        ListNode dummy = new ListNode();  // Dummy node to simplify list creation
-        ListNode current = dummy;  // Pointer to build the list
+        ListNode dummy = new ListNode(); 
+        ListNode current = dummy;  
         for (int val : arr) {
-            current.next = new ListNode(val);  // Create new node with current value
+            current.next = new ListNode(val);  
             current = current.next;  // Move pointer to the new node
         }
-        return dummy.next;  // Return the head of the linked list
+        return dummy.next; 
     }
 
     // Helper function to print a linked list in a readable format
