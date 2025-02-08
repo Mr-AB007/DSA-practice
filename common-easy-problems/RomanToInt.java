@@ -11,8 +11,8 @@ class RomanToInt {
         int prevValue = 0;
 
         for (int i = s.length() - 1; i >= 0; i--) {
-            int value = romanMap.get(s.charAt(i));
-            if (value < prevValue) {
+            int value = romanMap.get(s.charAt(i));  //checking from end
+            if (value < prevValue) {   //current value from end is less than last value then subtract
                 total -= value;
             } else {
                 total += value;
