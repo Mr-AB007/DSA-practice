@@ -50,7 +50,7 @@ Output: 6 (subarray: [4,-1,2,1])
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1] (nums[0] + nums[1] = 9)
 ```
-[Solution](https://github.com/Mr-AB007/DSA-practice/tree/main/arrayProblems)
+[Solution](https://github.com/Mr-AB007/DSA-practice/blob/main/arrayProblems/TwoSum.java)
 
 ### **4️⃣ Product of Array Except Self**
 **Problem:** Return an array `output[i]` such that `output[i] = product of all elements except nums[i]`.
