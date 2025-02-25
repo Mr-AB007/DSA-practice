@@ -5,7 +5,8 @@ The returned integer should be non-negative as well.
 You must not use any built-in exponent function or operator.
 */
 public class SquareRoot {
-
+        // Time:- O(log n)
+        // space:- O(1)
         public static int mySqrt(int x) {
             if (x == 0) return 0; // Edge case: The square root of 0 is 0.
 
