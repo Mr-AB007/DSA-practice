@@ -52,7 +52,7 @@ Output: [0,1] (nums[0] + nums[1] = 9)
 ```
 [Solution](https://github.com/Mr-AB007/DSA-practice/blob/main/arrayProblems/TwoSum.java)
 
-### **4️⃣ Product of Array Except Self**
+### **4️⃣ Product of Array Except for Self**
 **Problem:** Return an array `output[i]` such that `output[i] = product of all elements except nums[i]`.
 **Example:**  
 ```java
@@ -70,6 +70,16 @@ Output: 5 (Buy at 1, Sell at 6)
 ```
 [Solution](#)
 
+### **6️⃣ Group Anagrams**
+
+**Problem Statement**
+Given an array of strings, group the anagrams together. An anagram is a word or phrase formed by rearranging the letters of a different word.
+**Example:**
+```java
+ Input: ["eat", "tea", "tan", "ate", "nat", "bat"]
+Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+```
+[Solution](https://github.com/Mr-AB007/DSA-practice/blob/main/arrayProblems/GroupAnagrams.java)
 ---
 
 ## 📖 Resources
