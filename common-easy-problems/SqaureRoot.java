@@ -26,6 +26,7 @@ public class SquareRoot {
             }
 
             return right; // The integer square root is stored in `right`.
+                // return (int)Math.sqrt(x);      //same thing  
         }
 
     public static void main(String[] args) {
