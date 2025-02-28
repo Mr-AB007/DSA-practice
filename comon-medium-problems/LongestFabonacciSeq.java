@@ -1,6 +1,16 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+Outer loop (i): Runs O(N)
+Inner loop (j): Runs O(N)
+While loop (extending sequence) : O(log M)
+
+Total :- O(N² log M)
+*/
+
+
+//using golden ratio brute force approach
 class LongestFabonacciSeq {
     public int lenLongestFibSubseq(int[] arr) {
         // Use a HashSet for quick lookups (O(1) search time)
