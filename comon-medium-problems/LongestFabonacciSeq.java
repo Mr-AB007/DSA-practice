@@ -2,12 +2,27 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
-Outer loop (i): Runs O(N)
-Inner loop (j): Runs O(N)
-While loop (extending sequence) : O(log M)
 
-Total :- O(N² log M)
+Function to find the longest Fibonacci-like subsequence in a given sorted list.
+
+    A Fibonacci-like subsequence is defined as a sequence where:
+    - The sequence consists of at least 3 numbers.
+    - Each number is the sum of the two preceding numbers.
+
+    Args:
+    arr (list): A list of unique, increasing integers.
+
+    Returns:
+    int: The length of the longest Fibonacci-like subsequence or 0 if none found.
+   _________________________________________
+   Outer loop (i): Runs O(N)
+   Inner loop (j): Runs O(N)
+   While loop (extending sequence): O(log M)
+   Total :- O(N² log M)
 */
+
+
+
 
 
 //using golden ratio brute force approach
