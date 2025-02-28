@@ -12,44 +12,51 @@ Total :- O(N² log M)
 
 //using golden ratio brute force approach
 class LongestFabonacciSeq {
-    public int lenLongestFibSubseq(int[] arr) {
-        // Use a HashSet for quick lookups (O(1) search time)
+   public int lenLongestFibSubseq(int[] arr) {
+        // Use a HashSet to store the array elements for quick lookup (O(1) search time)
         Set<Integer> index = new HashSet<>();
         for (int n : arr) {
             index.add(n);
         }
 
-        int max = 2; // Stores the maximum length of a Fibonacci-like subsequence
+        int max = 2; // Stores the maximum length of any found Fibonacci-like sequence
         
         // Outer loop: Selects the first element of the sequence
         for (int i = 0; i < arr.length - max; i++) {
 
-            // Optimization: Break early if extending the sequence is impossible
-            if (arr[i] + arr[i + 1] > arr[arr.length - 1])
+            // Optimization: Break early if further sequences cannot be extended
+            // Using an approximation based on the Golden Ratio (1.618) to estimate Fibonacci growth
+            //if max = 5 then F0, F1, F2, F3, F4   (5 elements, but only 4 steps) F1 = F0*1.618
+            if (arr[i] * Math.pow(1.618, max - 1) > arr[arr.length - 1])
                 break;
 
             // Inner loop: Selects the second element of the sequence
             for (int j = i + 1; j < arr.length - max + 1; j++) {
 
-                if (arr[j] + arr[j - 1] > arr[arr.length - 1])
+                // Similar early termination check(max - 2) because a[i] is first elente of seq and a[j] is 2nd so n-2;
+                if (arr[j] * Math.pow(1.618, max - 2) > arr[arr.length - 1])
                     break;
 
                 // Initialize first two elements of the sequence
-                int n2 = arr[i], n1 = arr[j]; // First and second numbers
-                int len = 2; // Start with length 2
+                int n2 = arr[i]; // First number
+                int n1 = arr[j]; // Second number
+                int len = 2; // Start with length 2 since we have two numbers
 
-                // Extend sequence without using an extra swap variable
+                // Extend the sequence by checking if the sum exists in the array
                 while (index.contains(n1 + n2)) {
-                    n1 = n1 + n2; // New Fibonacci number
-                    n2 = n1 - n2; // Update previous number without extra variable
-                    len++;
+                    int temp = n1 + n2; // Calculate next Fibonacci number
+                    n2 = n1; // Move forward: Second number becomes first
+                    n1 = temp; // New Fibonacci number becomes second
+                    len++; // Increase sequence length
                 }
 
-                max = Math.max(max, len); // Update max length if current sequence is longer
+                // Update max length if the current sequence is longer
+                if (len > max)
+                    max = len;
             }
         }
         
-        // If max length is still 2, return 0 (no valid sequence found)
+        // If max length remains 2, it means no valid Fibonacci-like sequence was found
         return max < 3 ? 0 : max;
     }
 //##################################################
