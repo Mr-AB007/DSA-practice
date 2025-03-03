@@ -1,4 +1,6 @@
 // Definition for a singly linked list node
+//Time : O(n)
+//Space : O(1)
 class ListNode {
     int val;       // Stores the value of the node
     ListNode next; // Pointer to the next node
