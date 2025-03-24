@@ -17,6 +17,8 @@ Given the head of a linked list and an integer `val`, remove all nodes of the li
 public class RemoveLinkedListElements {
     
     // Function to remove elements from the linked list
+//#Time O(n)
+//#Space O(1)
     public static ListNode removeElements(ListNode head, int val) {
         // Create a dummy node to handle edge cases like removing the head node
         ListNode ans = new ListNode(0, head);
@@ -34,7 +36,12 @@ public class RemoveLinkedListElements {
         return ans.next; // Return the updated list without dummy node
     }
 
-  // Recursive approach to remove elements from the linked list
+
+    
+  // Recursive approach to remove elements from the linked list(better performance)
+
+//#Time O(n)
+//#Space O(n)
     public static ListNode removeElementsRecursive(ListNode head, int val) {
         // Base case: If the list is empty, return null
         if (head == null) return null;
