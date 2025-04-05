@@ -167,7 +167,7 @@ System.out.println("Size: " + list.getSize()); // Output: 4
 8. Rotate a Linked List
 9. Add Two Numbers Represented by Linked Lists
 10. Clone a Linked List with Random Pointers
-11. Remove the Nth Node from the End [(solution)] (https://github.com/Mr-AB007/DSA-practice/blob/main/linkedList/RemoveNthFromEnd.java)
+11. Remove the Nth Node from the End [(solution)](https://github.com/Mr-AB007/DSA-practice/blob/main/linkedList/RemoveNthFromEnd.java)
 
 ## Conclusion
 
