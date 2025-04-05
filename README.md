@@ -60,7 +60,7 @@ This repository contains various Data Structures and Algorithms (DSA) implementa
 ## How to Use This Repository
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/dsa-practice.git
+   git clone https://github.com/Mr-AB007/dsa-practice.git
    ```
 2. Navigate to the repository:
    ```bash
