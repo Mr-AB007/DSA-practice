@@ -41,7 +41,7 @@ Output: [1, 3, 6, 10]
 Input: [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6 (subarray: [4,-1,2,1])
 ```
-[Solution](#)
+[Solution](https://github.com/Mr-AB007/DSA-practice/blob/main/arrayProblems/MaxSumSubArray.java)
 
 ### **3️⃣ Two Sum**
 **Problem:** Given `nums` and `target`, return indices of two numbers that sum to `target`.
