@@ -2,12 +2,6 @@
 // Given an integer array nums, find the contiguous subarray (containing at least one number) 
 // which has the largest sum and return its sum.
 
-// --------------------------
-// ✅ Kadane’s Algorithm Intuition:
-// At every index, we ask: Should I continue the previous subarray OR start fresh from here?
-// - sum = max(current element, current element + previous sum)
-// - maxsum = max(maxsum so far, current sum)
-// --------------------------
 
 class MaxSumSubArray {
 
