@@ -1,4 +1,5 @@
-
+//time: n
+//sapce : n
 //303. Range Sum Query - Immutable
 class RangeSumQuery {
     int [] prefixsum; // -2,-2,1,-4,-3,-4
