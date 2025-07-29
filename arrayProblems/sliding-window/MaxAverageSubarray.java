@@ -13,11 +13,17 @@
 public class MaxAverageSubarray {
     public double findMaxAverage(int[] nums, int k) {
         double sums = 0;
+         // Step 1: Initialize the sum of the first 'k' elements
         for (int i = 0; i < k; i++) {
             sums += nums[i];
         }
+        // Step 2: Set the max average using the first window
         double max_sum = sums / k;
 
+         // Step 3: Slide the window from index k to the end
+        // In each step:
+        // - Add the new element (entering the window)
+        // - Subtract the old element (leaving the window)
         for (int i = k; i < nums.length; i++) {
             sums += nums[i] - nums[i - k];
             if (sums / k > max_sum) {
