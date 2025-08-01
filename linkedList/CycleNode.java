@@ -1,3 +1,6 @@
+//leetcode 142
+
+
 // Definition for a singly linked list node
 //Time : O(n)
 //Space : O(1)
